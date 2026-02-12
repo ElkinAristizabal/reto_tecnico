@@ -14,7 +14,7 @@ export class GetOrder {
                 }
 
                 const urlClean = baseUrl.replace(/\/$/, ""); 
-                const fullUrl = `${urlClean}/store/order/${id}`;
+                const fullUrl = `${urlClean}/order/${id}`;
                 return await apiContext.get(fullUrl);
             }
         };

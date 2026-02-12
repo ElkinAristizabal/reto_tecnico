@@ -28,7 +28,7 @@ export default defineConfig({
   ],
 
   use: {
-    baseURL: 'https://petstore.swagger.io/v2',
+    baseURL: 'https://petstore.swagger.io/v2/store',
     headless: false,
     trace: 'on',
     screenshot: 'on',

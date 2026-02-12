@@ -14,7 +14,7 @@ export class GetInventory {
                 }
 
                 const urlClean = baseUrl.replace(/\/$/, ""); 
-                const fullUrl = `${urlClean}/store/inventory`;
+                const fullUrl = `${urlClean}/inventory`;
                 return await apiContext.get(fullUrl);
             }
         };

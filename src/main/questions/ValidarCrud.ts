@@ -27,6 +27,7 @@ export class ValidarCrud {
 
             expect(this.createRes.status(), 'Error en crear orden: Status no es 200').toBe(200);
             expect(this.getRes.status(), 'Error en obtener orden: Status no es 200').toBe(200);
+            expect(this.inventoryRes.status(), 'Error en obtener el inventario: Status no es 200').toBe(200);
             expect(this.deleteRes.status(), 'Error en eliminar orden: Status no es 200').toBe(200);
 
             const inventoryBody = await this.inventoryRes.json();

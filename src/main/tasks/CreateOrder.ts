@@ -15,7 +15,7 @@ export class CreateOrder {
                 }
 
                 const urlClean = baseUrl.replace(/\/$/, ""); 
-                const fullUrl = `${urlClean}/store/order`;
+                const fullUrl = `${urlClean}/order`;
                 
                 return await apiContext.post(fullUrl, {
                     data: datos
