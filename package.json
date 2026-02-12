@@ -1,0 +1,25 @@
+{
+  "name": "playwright-cucumber-starter",
+  "version": "1.0.0",
+  "description": "Reto tecnico SURA Mex",
+  "main": "index.js",
+  "scripts": {
+    "test:base": "cucumber-js --config config/cucumber.js",
+    "test:qa": "cross-env NODE_ENV=qa npm run test:base",
+    "report": "node generate-report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "11.2.0",
+    "@playwright/test": "1.50.1",
+    "@types/node": "22.13.0",
+    "cross-env": "10.1.0",
+    "cucumber-html-reporter": "7.2.0",
+    "ts-node": "10.9.2"
+  },
+  "dependencies": {
+    "dotenv": "17.2.4"
+  }
+}
